@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Contact Dranoj James A. Sorongon — IT Support Specialist open to remote opportunities." />
+  <title>Contact — Dranoj Sorongon</title>
+  <link rel="stylesheet" href="css/style.css" />
+
+  <!--
+    ================================================================
+    EMAILJS SETUP (Required to make the contact form send emails)
+    ================================================================
+
+    STEP 1: Create a free account at https://www.emailjs.com
+    STEP 2: Add an Email Service (Gmail, Outlook, etc.)
+            → Dashboard → Email Services → Add New Service
+            → Connect your Gmail: dramessorongon@gmail.com
+            → Copy your SERVICE ID (e.g. "service_abc123")
+
+    STEP 3: Create an Email Template
+            → Dashboard → Email Templates → Create New Template
+            → Use these template variables:
+                Subject:  New message from {{from_name}}
+                Body:     Name: {{from_name}}
+                          Email: {{reply_to}}
+                          Message: {{message}}
+            → Copy your TEMPLATE ID (e.g. "template_xyz789")
+
+    STEP 4: Get your Public Key
+            → Dashboard → Account → General → Public Key
+
+    STEP 5: Replace the 3 placeholder values in js/script.js:
+            const serviceID  = 'YOUR_SERVICE_ID';   ← paste here
+            const templateID = 'YOUR_TEMPLATE_ID';  ← paste here
+            const publicKey  = 'YOUR_PUBLIC_KEY';   ← paste here
+
+    STEP 6: The SDK below (already included) handles the sending.
+
+    ⚠️ SECURITY: Never put your API keys directly in the HTML.
+       The public key is safe to expose; it is designed to be
+       used client-side. Do NOT share your private key.
+    ================================================================
+  -->
+
+  <!-- EmailJS SDK (loaded from CDN — requires internet connection) -->
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="container nav-inner">
+      <a href="index.html" class="nav-logo">DJS</a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="experience.html">Experience</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="schedule.html">Schedule</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+      <button class="hamburger" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+  <div class="mobile-menu">
+    <a href="index.html">Home</a><a href="about.html">About</a><a href="skills.html">Skills</a>
+    <a href="experience.html">Experience</a><a href="projects.html">Projects</a>
+    <a href="schedule.html">Schedule</a><a href="contact.html">Contact</a>
+  </div>
+
+  <div class="page-hero">
+    <div class="container">
+      <p class="section-label fade-up">Get In Touch</p>
+      <h1 class="page-hero-title fade-up">Contact Me</h1>
+      <p class="page-hero-sub fade-up">I'm open to remote IT and networking roles. Drop me a message and I'll reply within 24 hours.</p>
+    </div>
+  </div>
+
+  <section class="section" style="padding-top:0;">
+    <div class="container">
+      <div class="contact-grid">
+
+        <!-- Left: Info -->
+        <div class="contact-info fade-up">
+          <h2>Let's Work<br>Together</h2>
+          <p>Whether you have a job opportunity, a project that needs IT expertise, or just want to connect — my inbox is always open.</p>
+
+          <div class="contact-items">
+            <div class="contact-item">
+              <div class="contact-icon">✉️</div>
+              <div>
+                <div class="contact-item-label">Email</div>
+                <div class="contact-item-value">dramessorongon@gmail.com</div>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-icon">📱</div>
+              <div>
+                <div class="contact-item-label">Phone / WhatsApp</div>
+                <div class="contact-item-value">+63 994 985 0210</div>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-icon">📍</div>
+              <div>
+                <div class="contact-item-label">Location</div>
+                <div class="contact-item-value">Iloilo City, Philippines</div>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-icon">🕐</div>
+              <div>
+                <div class="contact-item-label">Timezone</div>
+                <div class="contact-item-value">PST (UTC +8)</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Form -->
+        <div class="fade-up">
+          <form id="contactForm" class="contact-form" novalidate>
+
+            <!--
+              SPAM PROTECTION: Hidden honeypot field.
+              Real users won't see or fill this.
+              Bots often auto-fill all fields — we catch them here.
+            -->
+            <div style="display:none; visibility:hidden;" aria-hidden="true">
+              <label for="website">Leave this empty</label>
+              <input type="text" id="website" name="website" tabindex="-1" autocomplete="off" />
+            </div>
+
+            <div class="form-group">
+              <label for="name">Full Name *</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="e.g. Maria Santos"
+                autocomplete="name"
+                required
+                minlength="2"
+                maxlength="100"
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email Address *</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="you@example.com"
+                autocomplete="email"
+                required
+                maxlength="150"
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="message">Message *</label>
+              <textarea
+                id="message"
+                name="message"
+                placeholder="Tell me about the role or project..."
+                required
+                minlength="10"
+                maxlength="2000"
+              ></textarea>
+            </div>
+
+            <!-- Status message (shown by JS after submit) -->
+            <div id="formStatus" class="form-status" role="alert"></div>
+
+            <button type="submit" class="btn-primary" style="align-self:flex-start;">
+              Send Message
+            </button>
+
+            <p style="font-size:0.8rem; color:var(--text-mute);">
+              * All fields required. I'll reply within 24 hours.
+            </p>
+
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>© 2025 Dranoj James A. Sorongon · Built with pure HTML, CSS &amp; JS</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

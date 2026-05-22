@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Projects by Dranoj James A. Sorongon — IT infrastructure, networking, and development work." />
+  <title>Projects — Dranoj Sorongon</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="container nav-inner">
+      <a href="index.html" class="nav-logo">DJS</a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="experience.html">Experience</a></li>
+        <li><a href="projects.html" class="active">Projects</a></li>
+        <li><a href="schedule.html">Schedule</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <button class="hamburger" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+  <div class="mobile-menu">
+    <a href="index.html">Home</a><a href="about.html">About</a><a href="skills.html">Skills</a>
+    <a href="experience.html">Experience</a><a href="projects.html">Projects</a>
+    <a href="schedule.html">Schedule</a><a href="contact.html">Contact</a>
+  </div>
+
+  <div class="page-hero">
+    <div class="container">
+      <p class="section-label fade-up">What I've Built</p>
+      <h1 class="page-hero-title fade-up">Projects</h1>
+      <p class="page-hero-sub fade-up">Infrastructure deployments, IT systems, and development work from my professional career.</p>
+    </div>
+  </div>
+
+  <section class="section" style="padding-top:0;">
+    <div class="container">
+
+      <!--
+        ================================================================
+        HOW TO ADD A NEW PROJECT (Step-by-Step)
+        ================================================================
+
+        1. DUPLICATE a project card block below (copy from <!-- PROJECT CARD --> <!-- to its closing </div>)
+        2. PASTE it right after the last project card
+        3. CHANGE the title, description, and tech stack text
+        4. ADD your image:
+              a. Name it something clear, e.g.: my-project.jpg
+              b. Place it in:  /portfolio/images/projects/my-project.jpg
+              c. Update src="images/projects/project1.jpg"
+                 to   src="images/projects/my-project.jpg"
+        5. Save the file — the layout adjusts automatically!
+
+        Image tips:
+          - Recommended size: 800 × 450 px (16:9 ratio)
+          - Format: .jpg or .png
+          - Keep file size under 300 KB for fast loading
+        ================================================================
+      -->
+
+      <div class="projects-grid">
+
+        <!-- ======================================================
+             PROJECT CARD 1  ← Duplicate this block to add more
+             ====================================================== -->
+        <div class="project-card fade-up">
+          <!--
+            IMAGE: Place your image in /portfolio/images/projects/
+            Then update the src attribute below.
+            If the image is missing, a placeholder is shown.
+          -->
+          <img
+            src="images/projects/project1.jpg"
+            alt="Enterprise VLAN Infrastructure"
+            class="project-img"
+            onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
+          />
+          <div class="project-img-placeholder" style="display:none;">
+            <span style="font-size:1.5rem;">🖼️</span>
+            <span>Add image to /images/projects/</span>
+          </div>
+
+          <div class="project-body">
+            <div class="project-title">Enterprise VLAN Infrastructure</div>
+            <p class="project-desc">
+              Designed and deployed VLAN-segmented network infrastructure for a multi-branch agricultural company.
+              Configured Cisco, Aruba, and Huawei switches to segment departments, improving security and performance.
+            </p>
+            <div class="project-stack">
+              <span class="stack-tag">Cisco</span>
+              <span class="stack-tag">Aruba</span>
+              <span class="stack-tag">Huawei</span>
+              <span class="stack-tag">VLAN</span>
+              <span class="stack-tag">TCP/IP</span>
+            </div>
+          </div>
+        </div>
+        <!-- END PROJECT CARD 1 -->
+
+        <!-- ======================================================
+             PROJECT CARD 2
+             ====================================================== -->
+        <div class="project-card fade-up">
+          <img
+            src="images/projects/project2.jpg"
+            alt="CCTV Surveillance System"
+            class="project-img"
+            onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
+          />
+          <div class="project-img-placeholder" style="display:none;">
+            <span style="font-size:1.5rem;">🖼️</span>
+            <span>Add image to /images/projects/</span>
+          </div>
+
+          <div class="project-body">
+            <div class="project-title">CCTV Surveillance System (500+ Cameras)</div>
+            <p class="project-desc">
+              Administered and monitored a company-wide surveillance system spanning 500+ IP cameras across 10 NVR servers.
+              Set up real-time monitoring dashboards via Smart PSS.
+            </p>
+            <div class="project-stack">
+              <span class="stack-tag">Smart PSS</span>
+              <span class="stack-tag">NVR</span>
+              <span class="stack-tag">IP Cameras</span>
+              <span class="stack-tag">Network Config</span>
+            </div>
+          </div>
+        </div>
+        <!-- END PROJECT CARD 2 -->
+
+        <!-- ======================================================
+             PROJECT CARD 3
+             ====================================================== -->
+        <div class="project-card fade-up">
+          <img
+            src="images/projects/project3.jpg"
+            alt="IT Asset Inventory System"
+            class="project-img"
+            onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
+          />
+          <div class="project-img-placeholder" style="display:none;">
+            <span style="font-size:1.5rem;">🖼️</span>
+            <span>Add image to /images/projects/</span>
+          </div>
+
+          <div class="project-body">
+            <div class="project-title">IT Asset Inventory System</div>
+            <p class="project-desc">
+              Built an integrated inventory management solution for 200+ laptops, desktops, cameras, and equipment using
+              Microsoft Lists, Power BI dashboards, SharePoint, and PowerApps for mobile access.
+            </p>
+            <div class="project-stack">
+              <span class="stack-tag">Power BI</span>
+              <span class="stack-tag">SharePoint</span>
+              <span class="stack-tag">PowerApps</span>
+              <span class="stack-tag">MS Lists</span>
+            </div>
+          </div>
+        </div>
+        <!-- END PROJECT CARD 3 -->
+
+        <!-- ======================================================
+             PROJECT CARD 4
+             ====================================================== -->
+        <div class="project-card fade-up">
+          <img
+            src="images/projects/project4.jpg"
+            alt="Remote Support Infrastructure"
+            class="project-img"
+            onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
+          />
+          <div class="project-img-placeholder" style="display:none;">
+            <span style="font-size:1.5rem;">🖼️</span>
+            <span>Add image to /images/projects/</span>
+          </div>
+
+          <div class="project-body">
+            <div class="project-title">Remote Support &amp; Help Desk Operations</div>
+            <p class="project-desc">
+              Set up and managed a remote support workflow delivering 10+ daily sessions to branch offices.
+              Tools include MS Quick Assist, AnyDesk, and RDP, with OS reimaging and backup pipelines.
+            </p>
+            <div class="project-stack">
+              <span class="stack-tag">AnyDesk</span>
+              <span class="stack-tag">RDP</span>
+              <span class="stack-tag">Quick Assist</span>
+              <span class="stack-tag">Windows</span>
+              <span class="stack-tag">Backup</span>
+            </div>
+          </div>
+        </div>
+        <!-- END PROJECT CARD 4 -->
+
+        <!--
+          ↑↑↑ ADD MORE PROJECTS BY DUPLICATING A CARD ABOVE ↑↑↑
+        -->
+
+      </div><!-- /projects-grid -->
+
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>© 2025 Dranoj James A. Sorongon · <a href="contact.html">Let's work together</a></p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
